@@ -101,13 +101,109 @@ ul li a{
 }
 
 
-
-.web-title::before{
-  content: "Web ";
-  background-color: #FF664E;
+.title-web{
+    padding: 0 5px;
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        #FF664E 50%,
+    );
 }
 
-.web-title2::before{
-  content: "Developer ";
-  background-color: #FF664E;
+/* ============  about section ================ */
+.container{
+    width: 100%;
+    background-color: #131B23;
+    padding-bottom: 100px;
+    color: white;
 }
+
+.about_section{
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 48px;
+}
+.about-col h2{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.about-col p{
+    font-size: 20px;
+}
+
+.p-top{
+    margin-top: 20px;
+}
+
+
+
+.about-row{
+    display: flex;
+    margin-top: 60px;  
+}
+.about-col{
+    width: 50%;  
+}
+
+button{
+    border: none;
+    padding: 8px;
+    background-color: #FF664E;
+    font-weight: 800;
+    color: white;
+    border-radius: 10px;
+    margin-top: 45px;
+}
+
+.titel-col{
+    color: #FF664E;
+}
+
+.box{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(153, 143, 143);
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =================== Skills section ================= */
+
+.skills_section{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.skills-row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.skills-col{
+    width: 30%;
+    
+}
+
+.line{
+    border-left: 5px solid #FF664E;
+}
+
+h3{
+    text-align: center;
+    font-size: 28px;
+}
+
+
+
+
+
