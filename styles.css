@@ -203,6 +203,27 @@ h3{
     font-size: 28px;
 }
 
+.myName{
+    font-size: 64px;
+}
+
+.icon_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_container div{
+    width: 50%; 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+
+
 
 
 
