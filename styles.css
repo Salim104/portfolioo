@@ -217,7 +217,7 @@ h3{
 }
 
 .icon_container div{
-    width: 52%; 
+    width: 50%; 
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
