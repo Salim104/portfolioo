@@ -273,26 +273,61 @@ h3{
 form{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 form div{
-    width: 50% ;
+    width: 100% ;
 }
 
-form div input{
-    width: 80%;
-    margin-top: 20px;
+.form-row-1{
+    width: 100% ;
+    display: flex;
+    justify-content: space-between;
 }
-input{
+
+.form-1{
+    width: 45%;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
     height: 20px;
     padding: 10px;
 }
 
-textarea{
-    width: 80%;
+
+.form-2{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    height: 20px;
+    padding: 10px;
 }
 
+.form-3{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+   
+}
+
+.submit-btn{
+    width: 10%;
+    padding: 10px 5px;
+    background-color: #FF664E;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 20px;
+    margin-top:15px;
+}
+
+.footer-title{
+    margin-bottom: 100px;
+}
 
 
 
