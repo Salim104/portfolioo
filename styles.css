@@ -160,6 +160,7 @@ button{
 }
 
 .titel-col{
+    color: rgb(255, 102, 78);
     color: #FF664E;
 }
 
@@ -225,11 +226,12 @@ h3{
 
 /*  */
 
-.project-container{
+.project-container {
     width: 80%;
     margin: 0 auto;
     /* background-color: #FF664E; */
 }
+
 
 .project-row{
     width: 100%;
@@ -239,11 +241,37 @@ h3{
     margin-top: 50px;
 }
 .box-container{
-    width: 40%;
+    width: 30%;
+    padding: 10px;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    box-shadow: insert 5px 5px  15px rgba(0, 0, 0, 0.15),
+    insert -5px -5px 15px rgba( 255, 255, 255, 0.15),
+    5px 5px 15px rgba(0, 0, 0, 0.15),
+    -5px -5px 15px rgba(255, 255, 255, 0.15),
+    
 }
+
+
+.box-container:hover{
+    /* box-shadow: 5px 4px 5px 5px rgba(255, 102, 78,0.2), 5px 4px 8px 5px rgba(255, 102, 78,0.2);
+    color: rgb(0, 48, 86); */
+    box-shadow: rgba(255, 102, 78,0.5) 0px 5px 15px;
+
+}
+.box-container{
+    box-shadow: rgba(0, 48, 86, 0.5) 0px 5px 15px;
+}
+
+
 .box-container div{
-    width: 90%;
-    /* padding: 10px; */
+    width: 100%;
+     
+}
+.box-container div img{
+    border-radius: 40px;
+    width: 100%;   
 }
 
 .box-container div img{
@@ -263,6 +291,12 @@ h3{
 
 
 /* ========== contact form ======== */
+
+.line{
+    width: 20px;
+    height: 3px;
+    background-color: #FF664E;
+}
 
 .contact-container{
     width: 80%;
