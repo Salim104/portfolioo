@@ -292,20 +292,31 @@ h3{
 
 /* ========== contact form ======== */
 
+.contact-title-box{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .line{
-    width: 20px;
+    width: 200px;
     height: 3px;
     background-color: #FF664E;
 }
 
 .contact-container{
+    display: flex;
+    justify-content: space-between;
     width: 80%;
     margin: 0 auto;
 }
 
 
 form{
-    width: 100%;
+    width: 45%;
     display: flex;
     flex-direction: column;
 }
@@ -348,6 +359,18 @@ form div{
    
 }
 
+.footer-text-box{
+    width: 45;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text{
+  font-size: 24px;
+}
+
 .submit-btn{
     width: 10%;
     padding: 10px 5px;
@@ -359,9 +382,16 @@ form div{
     margin-top:15px;
 }
 
-.footer-title{
-    margin-bottom: 100px;
+
+/* ===== */
+
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
+
+
 
 
 
