@@ -4,6 +4,12 @@
     background-origin:border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
+
+
 nav{
     width:100%;
     background-color: #131B23;
@@ -301,7 +307,7 @@ h3{
     align-items: center;
 }
 
-.line{
+.line-con{
     width: 200px;
     height: 3px;
     background-color: #FF664E;
@@ -374,7 +380,7 @@ form div{
 .submit-btn{
     width: 10%;
     padding: 10px 5px;
-    background-color: #FF664E;
+    background-color: #FF664E; 
     color: white;
     font-size: 16px;
     font-weight: 500;
@@ -387,7 +393,23 @@ form div{
 .social{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.social-img{
+   margin-right:8px ;
+}
+
+.social p{
+    display: flex;
+    align-items: center;
+}
+
+
+.social p a{
+    font-size: 20px;
+    color: #FF664E;
 }
 
 
