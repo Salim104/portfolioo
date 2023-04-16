@@ -1,0 +1,164 @@
+
+/* formula */
+/* 1344px / 16 == 84em */
+
+
+
+/**************************/
+/* BELOW 140px (Landscape Tablets) */
+/**************************/
+@media (max-width: 90em) {
+
+    html {
+        /* 9px / 16px  */
+        font-size: 56.25%;
+      }
+  
+  }
+
+  
+
+/**************************/
+/* BELOW 1278px (Landscape Tablets) */
+/**************************/
+@media (max-width: 80em) {
+ 
+    html {
+        /* 8px / 16px  */
+        font-size: 50%;
+      }
+  
+  }
+
+  
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+ 
+    html {
+        font-size: 45%;
+      }
+
+
+      :root{
+        /* size  */
+        /*  16 21 32 46 64 */
+        /* =font-size= */
+      --main-title:7.5rem;
+      --heading:4.6rem;
+      --sub-heading:3.2rem;
+      --sub-x-heading:3.0rem;
+      --paragram:2.1rem;
+      --small-text:2rem;
+      /* font-fam */
+    
+      --roboto:'Roboto', sans-serif;
+      --ptmono:'PT Mono', monospace;
+    }
+
+  
+  }
+
+
+/**************************/
+/* BELOW 1080px (Landscape Tablets) */
+/**************************/
+@media (max-width: 67.5em) {
+ 
+    html {
+        font-size: 43%;
+      }
+
+
+      :root{
+      --main-title:7rem;
+      --roboto:'Roboto', sans-serif;
+      --ptmono:'PT Mono', monospace;
+    }
+
+    .skills_section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .icon_container div {
+        width: 60%;
+    }
+  
+  }
+
+
+/**************************/
+/* BELOW 960px
+/**************************/
+@media (max-width: 60em) {
+ 
+    html {
+        font-size: 38%;
+      }
+
+
+      :root{
+      --main-title:6.8rem;
+      --roboto:'Roboto', sans-serif;
+      --ptmono:'PT Mono', monospace;
+    }
+
+    .skills_section {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    textarea{
+     height: 25rem;
+    }
+
+    .box{
+        width: 56%;
+    }
+
+    .icon_container div {
+        width: 60%;
+    }
+  
+  }
+
+/**************************/
+/* BELOW 870px
+/**************************/
+
+@media (max-width: 54em) {
+ 
+    html {
+        font-size: 33%;
+      }
+
+
+      :root{
+      --main-title:6.4rem;
+      --roboto:'Roboto', sans-serif;
+      --ptmono:'PT Mono', monospace;
+    }
+
+    .skills_section {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    textarea{
+     height: 20rem;
+    }
+
+    .box{
+        width: 56%;
+    }
+
+    .icon_container div {
+        width: 60%;
+    }
+  
+  }
+
+
+

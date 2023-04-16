@@ -34,7 +34,7 @@ a{
     text-decoration: none;
 }
 
-
+/* =============== here section ===========  */
 
 nav{
     width:100%;
@@ -51,15 +51,15 @@ nav{
 }
 
 .nav_container img{
-    width: 268px;
-    height: 30px;
+    width: 26,8rem;
+    height: 3rem;
 }
 
 ul{
     
     width: 25%;
     display: flex;
-    margin: 20px 0;
+    margin: 2rem 0;
     justify-content: space-between;
 }
 ul li{
@@ -167,26 +167,25 @@ h1{
     font-size: var(--l-500);
     font-weight: 600;
     text-align: center;
-    font-size: 48px;
 }
 .about-col h2{
     font-size: var(--sub-heading);
     font-family: var(--ptmono);
-    margin-bottom: 30px;
+    margin-bottom: 4rem;
 }
 .about-col p{
     font-size: var(--paragram);
 }
 
 .p-top{
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 
 
 .about-row{
     display: flex;
-    margin-top: 60px;  
+    margin-top: 6rem;  
 }
 .about-col{
     width: 50%;  
@@ -194,12 +193,12 @@ h1{
 
 button{
     border: none;
-    padding: 8px;
+    padding: 0.8rem;
     background-color: #FF664E;
     font-weight: 800;
     color: white;
     border-radius: 10px;
-    margin-top: 45px;
+    margin-top: 4.5rem;
 }
 
 .titel-col{
@@ -254,7 +253,7 @@ button{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 6rem;
 }
 
 .skills-col{
@@ -277,7 +276,7 @@ h3{
     font-size: var(--main-title);
     font-family: var(--roboto);
     font-weight: 700;
-    margin-left: 90px;
+    margin-left: 9rem;
 }
 
 
@@ -294,7 +293,7 @@ h3{
     width: 50%; 
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 5rem;
 }
 
 /*  */
@@ -311,7 +310,7 @@ h3{
     height: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 5rem;
 }
 .box-container{
     width: 30%;
@@ -354,7 +353,7 @@ h3{
 .btn{
     font-family: var(--roboto);
     background-color: #FF664E;
-    padding: 5px 15px;
+    padding: 0.5rem 1.5rem;
     color: white;
 }
 
@@ -373,7 +372,7 @@ h3{
 
 .line-con{
     width: 200px;
-    height: 3px;
+    height: 0.3rem;
     background-color: #FF664E;
 }
 
@@ -403,29 +402,29 @@ form div{
 
 .form-1{
     width: 45%;
-    border-radius: 10px;
+    border-radius: 1rem;
     border: none;
-    margin-top: 20px;
-    height: 20px;
-    padding: 10px;
+    margin-top: 2rem;
+    height: 2rem;
+    padding: 1rem;
 }
 
 
 .form-2{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
     border: none;
-    margin-top: 20px;
-    height: 20px;
-    padding: 10px;
+    margin-top: 2rem;
+    height: 2rem;
+    padding: 1rem;
 }
 
 .form-3{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
     border: none;
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 2rem;
+    padding: 1rem;
    
 }
 
@@ -440,7 +439,9 @@ form div{
 .footer-text{
      font-size: var(--paragram);
 }
-
+.footer-title{
+    margin-bottom: 1rem;
+}
 .submit-btn{
     font-family: var(--roboto);
     padding: 10px 5px;
@@ -450,7 +451,11 @@ form div{
     font-size: 16px;
     font-weight: 500;
     border-radius: 20px;
-    margin-top:15px;
+    margin-top:1.5rem;
+}
+
+textarea{
+    resize: none;
 }
 
 /* ===== */
@@ -459,11 +464,11 @@ form div{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 35px;
+    margin-top: 3.5rem;
 }
 
 .social-img{
-   margin-right:8px ;
+   margin-right:0.8rem ;
 }
 
 .social p{
@@ -473,7 +478,7 @@ form div{
 
 
 .social p a{
-    font-size: 20px;
+    font-size: 2rem;
     color: #FF664E;
 }
 
@@ -482,7 +487,9 @@ h1{
      font-size: var(--heading);
      font-family: var(--roboto);
      font-weight: 700;
+     margin-bottom: 8rem;
 }
+
 
 
 
@@ -490,6 +497,10 @@ h4{
     font-size: var(--small-text);
     font-family: var(--ptmono);
 }
+
+
+
+
 
 
 
