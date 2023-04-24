@@ -355,11 +355,11 @@ h3{
     background-color: #FF664E;
     padding: 0.5rem 1.5rem;
     color: white;
+    cursor: pointer;
 }
 
 
 /* ========== contact form ======== */
-
 
 .contact-title-box{
     width: 100%;
@@ -491,12 +491,21 @@ h1{
 }
 
 
-
-
 h4{
     font-size: var(--small-text);
     font-family: var(--ptmono);
 }
+
+
+.hero-img{
+    width: 30%;
+}
+
+
+.icon{
+    width: 100%;
+}
+
 
 
 
