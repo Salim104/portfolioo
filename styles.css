@@ -502,8 +502,9 @@ h4{
 }
 
 
-.icon{
-    width: 100%;
+.icon {
+    width: 50%;
+    margin: 0 1rem;
 }
 
 
