@@ -22,6 +22,10 @@ html{
   --ptmono:'PT Mono', monospace;
 }
 
+body{
+    background-color: #131B23;
+}
+
 
 
 *{

@@ -213,7 +213,8 @@
   }
 
   .icon_container div {
-      width: 60%;
+      width: 70%;
+      gap: 8rem;
   }
 
   .hero-img {
@@ -388,5 +389,9 @@
     display: none;
   }
 
+
+  .icon {
+    width: 50%;
+  }
 
 }
