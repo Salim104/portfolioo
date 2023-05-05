@@ -156,7 +156,7 @@
     }
 
     .box{
-        width: 56%;
+        width: 100%;
     }
 
     .icon_container div {
@@ -222,7 +222,7 @@
   }
 
   .box {
-    width: 90%;
+    width: 100%;
  }
 
 }
@@ -265,6 +265,7 @@
 
   .skills-col {
     width: 80%;
+    margin-top: 10rem;
    }
 
    .icon {
@@ -281,7 +282,7 @@
   }
 
   .about-col {
-    width: 70%;
+    width: 100%;
   }
 
   .left {
@@ -326,7 +327,9 @@
   .footer-text {
     font-size: 3.5rem;
   }
-
+  .icon-container img:nth-child(4) {
+    display: none;
+   }
 }
 
 /* ===================== */
@@ -341,7 +344,7 @@
     --heading:6.2rem;
     --sub-heading:3.2rem;
     --sub-x-heading:4.0rem;
-    --paragram:2.3rem;
+    --paragram:1.9rem;
     --small-text:3rem;
     /* font-fam */
   
@@ -374,7 +377,7 @@
 
 
   .about-col {
-    width: 90%;
+    width: 100%;
 }
 
   .form-1 {
@@ -386,9 +389,10 @@
 
   .icon-container {
     width: 0%;
-    display: none;
   }
-
+  .icon-container img:nth-child(4) {
+    display: none;
+   }
 
   .icon {
     width: 50%;
