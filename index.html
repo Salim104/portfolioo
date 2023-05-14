@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SalimDev_codes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles.css">
@@ -17,15 +19,27 @@
 <body>
     <nav>
        <div class="nav_container">
-        <img src="./images/logo-svg.svg" alt="logo" srcset="">
-        <ul>
-            <li><a href="">about</a></li>
-            <li><a href="">skills</a></li>
-            <li><a href="">projects</a></li>
+        <input type="checkbox" id="check">
+        
+        <img class="main_logo" src="./images/logo-svg.svg" alt="logo" srcset="">
+        <ul class="nav_links">
+            <li onclick="navReturn()"><a href="#about">about</a></li>
+            <li  onclick="navReturn()"><a href="#skills">skills</a></li>
+            <li  onclick="navReturn()"><a href="#projects">projects</a></li>
+            <li  onclick="navReturn()"><a href="#Contact">Contact Me</a></li>
         </ul>
+        <label for="check" class="checkbtn">
+            <div class="menu-icon">
+                <span class="first-bar"></span>
+                <span class="second-bar"></span>
+                <span class="third-bar"></span>
+            </div>
+        </label>
        </div>
     </nav>
-    <section class="hero">
+
+
+    <section id="about" class="hero">
         <p class="myName">
             Hi , I’M SALIM || <span class="title-web">Web</span> <br>
             <span class="title-web">Developer</span>
@@ -71,7 +85,7 @@
         </div>
        </div>
     </section>
-    <section class="container">
+    <section id="skills" class="container">
        <div class="skills_section">
         <h1><span class="titel-col">My</span> Skills</h1>
         <div class="skills-row">
@@ -122,53 +136,88 @@
 
        </div>
     </section>
-    <section class="container">
+    <section id="projects" class="container">
         <h1>Projects</h1>
         <div class="project-container">
            <div class="project-row">
               <div class="box-container">
                 <div>
-                    <img src="./images/project-icon.png" alt="">
+                    <img src="./images/github.png" alt="">
                 </div>
-                <div>
-                    <button class="btn">Live</button>
-                    <button class="btn">Github code</button>
+                <div class="details_project">
+                     <h4>Github User</h4>
+                    <p class="pro_details">
+                        This website makes use of Github open-source API’s, 
+                        that allows users to search their own profile as 
+                        well as other people’s profile with basic information 
+                        like repositories,followers and stars.
+                    </p>
+                    <div class="button">
+                        <button class="btn">Live</button>
+                        <button class="btn">Github code</button>
+                    </div>
                 </div>
               </div>
               <div class="box-container">
                 <div>
-                    <img src="./images/project-icon.png" alt="">
+                    <img src="./images/hotela-v.png" alt="">
                 </div>
-                <div>
-                    <button class="btn">Live</button>
-                    <button class="btn">Github code</button>
-                </div>
+                <div class="details_project">
+                    <h4>Hotela</h4>
+                   <p class="pro_details">
+                    Hotela is a hotel booking website that allows users
+                    to book rooms and apartments that 
+                    hotela offers.
+                   </p>
+                   <div class="button">
+                       <button class="btn">Live</button>
+                       <button class="btn">Github code</button>
+                   </div>
+               </div>
               </div>
            </div>
            
            <div class="project-row">
             <div class="box-container">
               <div>
-                  <img src="./images/project-icon.png" alt="">
+                  <img src="./images/social.png" alt="">
               </div>
-              <div>
-                <button class="btn">Live</button>
-                <button class="btn">Github code</button>
-              </div>
+              <div class="details_project">
+                <h4>Social Donor</h4>
+               <p class="pro_details">
+                   This website makes use of Github open-source API’s, 
+                   that allows users to search their own profile as 
+                   well as other people’s profile with basic information 
+                   like repositories,followers and stars.
+               </p>
+               <div class="button">
+                   <button class="btn">Live</button>
+                   <button class="btn">Github code</button>
+               </div>
+           </div>
             </div>
             <div class="box-container">
               <div>
                   <img src="./images/project-icon.png" alt="">
               </div>
-              <div>
-                <button class="btn">Live</button>
-                <button class="btn">Github code</button>
-              </div>
+              <div class="details_project">
+                <h4>Github User</h4>
+               <p class="pro_details">
+                   This website makes use of Github open-source API’s, 
+                   that allows users to search their own profile as 
+                   well as other people’s profile with basic information 
+                   like repositories,followers and stars.
+               </p>
+               <div class="button">
+                   <button class="btn">Live</button>
+                   <button class="btn">Github code</button>
+               </div>
+           </div>
             </div>
          </div>
         </div>
     </section>
-    <section class="container">
+    <section id="Contact" class="container">
         <div class="contact-title-box">
             <h1 class="footer-title">Contact <span class="titel-col">Me</span></h1>
             <div class="line-con"></div>
@@ -206,5 +255,55 @@
                    </form>
           </div>
     </section>
+
+    <script >
+
+
+    function navReturn(){
+       var checkBox = document.getElementById("check");
+
+        if (checkBox.checked == true){
+         checkBox.checked = false;
+        } 
+
+         
+    }
+
+
+    //    ========================
+$(window).on("load", function() {
+    "use strict";
+
+
+
+    // ========== ResonSive Mobile Menu ============ //
+    $(".navigations > ul > li").addClass("menu-item-has-children"); 
+    $(".navigations > ul > li.menu-item-has-children > a").on("click", function(){
+        $(this).parent().toggleClass("active").siblings().removeClass("active");
+        $(this).next("ul").slideToggle();
+        $(this).parent().siblings().find("ul").slideUp();
+        return false;
+    });
+
+
+
+    
+
+    // ========== Responsive Header Menu ============ //
+    $(".menu-icon").on("click", function(){
+        $(".second-bar").toggleClass("active");
+        $(".first-bar").toggleClass("active");
+        $(".third-bar").toggleClass("active");
+        $(".responsive-header").toggleClass("active");
+    })
+
+
+    
+
+});
+
+
+
+    </script>
 </body>
 </html>

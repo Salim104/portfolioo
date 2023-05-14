@@ -167,6 +167,12 @@
     .hero-img {
       width: 40%;
     }
+
+
+    .nav_container img {
+      width: 26.8rem;
+      height: 5rem;
+  }
   
   }
 
@@ -242,12 +248,19 @@
     --sub-heading:3.2rem;
     --sub-x-heading:3.0rem;
     --paragram:2.3rem;
-    --small-text:3rem;
+    --small-text:4rem;
     /* font-fam */
   
     --roboto:'Roboto', sans-serif;
     --ptmono:'PT Mono', monospace;
   }
+
+
+  .nav_container img {
+    width: 26.8rem;
+    height: 4rem;
+    margin-top: 1rem;
+}
 
   .hero-img{
     display: none;
@@ -330,7 +343,56 @@
   .icon-container img:nth-child(4) {
     display: none;
    }
+
+   /* ==================   =================== */
+   .checkbtn{
+    display: block;
+   }
+ 
+   .nav_container{
+    position: relative;
+   }
+ 
+   .nav_container ul{
+    position: fixed;
+    background-color: #222b34;
+    width: 20%;
+    height: 100vh;
+    top: 50px;
+    left: -200%;
+    transition: all .5s;
+    display: flex;
+    gap: 10rem;
+    margin: auto 0;
+    flex-direction: column;
+    z-index: 999;
+    justify-content: normal;
+    padding: 30%;
+    transition: all .5s;
+ 
+    
+   }
+ 
+   .ul li a {
+    font-size: 4rem;
+   }
+ 
+   #check:checked ~ ul{
+      left: 0;
+   }
+ 
+ 
+   /* ===menubar */
+   .menu-icon {
+  float: right;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  top: 11px;
+ }
 }
+
+
 
 /* ===================== */
   /* Mobile() */
