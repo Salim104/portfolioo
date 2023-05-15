@@ -413,6 +413,10 @@
     --roboto:'Roboto', sans-serif;
     --ptmono:'PT Mono', monospace;
   }
+  .pro_details {
+    font-size: 2rem;
+    font-weight: 500;
+}
 
 
   h1 {
