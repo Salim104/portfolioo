@@ -49,7 +49,7 @@
       --heading:4.6rem;
       --sub-heading:3.2rem;
       --sub-x-heading:3.0rem;
-      --paragram:2.1rem;
+      --paragraph:2.1rem;
       --small-text:2rem;
       /* font-fam */
     
@@ -196,7 +196,7 @@
     --heading:4.6rem;
     --sub-heading:3.2rem;
     --sub-x-heading:3.0rem;
-    --paragram:2.1rem;
+    --paragraph:2.1rem;
     --small-text:2rem;
     /* font-fam */
   
@@ -247,7 +247,7 @@
     --heading:4.6rem;
     --sub-heading:3.2rem;
     --sub-x-heading:3.0rem;
-    --paragram:2.3rem;
+    --paragraph:2.3rem;
     --small-text:4rem;
     /* font-fam */
   
@@ -255,6 +255,9 @@
     --ptmono:'PT Mono', monospace;
   }
 
+  .footer-text-box {
+    width: 90%;
+  }
 
   .nav_container img {
     width: 26.8rem;
@@ -265,6 +268,11 @@
   .hero-img{
     display: none;
   }
+
+  .pro_details {
+    font-size: 2.1rem;
+    font-weight: 500;
+}
 
   .line {
     border:none;
@@ -310,7 +318,6 @@
 
   .box-container {
     width: 90%;
-    margin: 0 auto;
 
   }
 
@@ -324,13 +331,18 @@
     flex-direction: column;
   }
 
+ 
   form {
     width: 90%;
-    margin: 0 auto;
   }
 
   .social {
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social p{
+    padding: 1rem;
   }
 
   .footer-text {
@@ -406,7 +418,7 @@
     --heading:6.2rem;
     --sub-heading:3.2rem;
     --sub-x-heading:4.0rem;
-    --paragram:1.9rem;
+    --paragraph:1.9rem;
     --small-text:3rem;
     /* font-fam */
   
@@ -464,4 +476,81 @@
     width: 50%;
   }
 
+}
+
+
+
+@media (max-width: 23.7em) {
+
+  :root{
+    /* =font-size= */
+  --main-title:8rem;
+  --heading:4.6rem;
+  --sub-heading:3.2rem;
+  --sub-x-heading:3.0rem;
+  --paragraph:2.1rem;
+  --small-text:2.8rem;
+  --paragraph-xs:2.4rem;
+  
+}
+
+.myName {
+  margin:0;
+}
+.about-row {
+  width: 100%;
+}
+.about-col p {
+  font-size: var(--paragraph-xs);
+}
+
+.pro_details {
+  font-size: var(--paragraph);
+  font-weight: 500;
+}
+
+.social p {
+  padding-left: 0rem;
+}
+
+.social p a {
+  font-size: var(--small-text);
+  color: #FF664E;
+}
+
+form {
+  width: 90%;
+  margin: 0 ;
+}
+
+.box {
+  width: 80%;
+  height: 80%;
+}
+
+.skills-col {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+.details_project {
+  margin-left: 0rem;
+  margin-bottom: 1rem;
+}
+
+.icon_container div {
+  width: 100%;
+  gap: 8rem;
+  margin: 0 auto;
+}
+
+.icon {
+  width: 35%;
+}
+
+
+.footer-text-box {
+  width: 100%;
+}
 }

@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WA//FRWEB//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:86A98CD53732371
+SEQUENCE:1
+DESCRIPTION:Trip Ref: 86A98CD.\nTrip Name: EO EVENT.\nTraveller Name: Moneri Thovhakale.\nFlight Number: FA298.\nReservation Code: MSOESU.\nDeparts From: OR Tambo International.\nDeparts To: Cape Town International.\nDeparture Time: Jun 13, 2023 07:15.\nArrival Time: Jun 13, 2023 09:25.\n\nGo to https://travelit.tvst.travel/Travel/Controls/Attachments/View.aspx?Guid=972cb606-9f64-42ae-860b-1e92cf896b89 for full trip details\nRemember to do an online check-in 24 hours of departure
+DTSTART:20230613T071500
+DTEND:20230613T092500
+BEGIN:VALARM
+TRIGGER:-PT2H
+REPEAT:1
+DURATION:PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+CREATED:20230516T090549
+DTSTAMP:20230516T090549
+LAST-MODIFIED:20230516T090549
+LOCATION:OR Tambo International
+SUMMARY;LANGUAGE=en-za:Flight | FA298 OR Tambo International / Cape Town International 07:15 - 09:25 | Trip Ref: 86A98CD | Flight Confirmation: MSOESU | Ticket Number: 6409797178471 | Traveller Name: Moneri Thovhakale
+END:VEVENT
+END:VCALENDAR

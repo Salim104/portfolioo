@@ -15,7 +15,8 @@ html{
   --heading:4.6rem;
   --sub-heading:3.2rem;
   --sub-x-heading:3.0rem;
-  --paragram:2.1rem;
+  --paragraph:2.1rem;
+  --paragraph-xs:1.9rem;
   --small-text:2rem;
   /* font-fam */
 
@@ -215,11 +216,7 @@ ul li a{
 
 .title-web{
     padding: 0 5px;
-    background: linear-gradient(
-        to bottom,
-        transparent 50%,
-        #FF664E 50%,
-    );
+    color:  #FF664E;
 }
 
 /* ============  about section ================ */
@@ -246,21 +243,22 @@ h1{
     margin-bottom: 4rem;
 }
 .about-col p{
-    font-size: var(--paragram);
+    font-size: var(--paragraph-xs);
 }
 
 .p-top{
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 
 
 .about-row{
     display: flex;
+    justify-content: space-between;
     margin-top: 6rem;  
 }
 .about-col{
-    width: 80%;  
+    width: 50%;  
 }
 
 button{
@@ -416,11 +414,13 @@ h3{
 }
 .box-container div img{
     border-radius: 40px;
-    width: 100%;   
+    width: 100%;  
+  
 }
 
 .box-container div img{
     width: 100%;
+    object-fit: cover; 
 }
 
 .btn{
@@ -502,7 +502,7 @@ form div{
 }
 
 .footer-text-box{
-    width: 45;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -510,7 +510,7 @@ form div{
 }
 
 .footer-text{
-     font-size: var(--paragram);
+     font-size: var(--paragraph);
 }
 .footer-title{
     margin-bottom: 1rem;
