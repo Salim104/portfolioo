@@ -289,8 +289,9 @@ button{
 }
 .box{
  
-    background-image: url("./images/mypic-v.png");
-    background-size: cover;
+    background-image: url("./images/my-picc.png");
+    background-size: 110%;
+    background-position: center 30%;
     background-repeat: no-repeat;
     object-fit: cover;
     width: 100%;
