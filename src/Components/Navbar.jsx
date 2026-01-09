@@ -4,7 +4,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 
 const navLinks = [
-  { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
 ];
@@ -28,7 +27,7 @@ const Navbar = () => {
     >
       {/* Left Section: Logo */}
       <div className="flex items-center">
-        <img src={logo} alt="Portfolio Logo" className="h-8 w-auto" />
+        <img src={logo} alt="Portfolio Logo" className="h-10 md:h-8 w-auto" />
       </div>
 
       {/* Desktop Navigation */}
@@ -46,14 +45,13 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Right Section: Download Button */}
+        {/* Right Section: Contact Button */}
         <div className="flex items-center gap-2">
           <a
-            href="/cv.pdf"
-            download
-            className="bg-[#FF6B5C] text-white px-4 py-[3px] rounded-md font-bold text-lg hover:bg-[#ff4a3a] transition-all duration-200"
+            href="#contact"
+            className="bg-[#2BC1EA] text-white px-4 py-[3px] rounded-md font-bold text-lg hover:bg-[#1fa9cf] transition-all duration-200"
           >
-            Download CV
+            Contact me
           </a>
         </div>
       </div>
@@ -71,7 +69,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
     
-        <div className={`fixed top-16 left-0 w-[80%] h-full border-r border-r-gray-900 bg-[#002440] z-50 transition-transform duration-700 ease-in-out ${
+        <div className={`fixed top-16 left-0 w-[80%] h-full border-r border-r-gray-900 bg-[#0E1A4A] z-50 transition-transform duration-700 ease-in-out ${
           isMenuOpen ? 'translate-x-0 ' : '-translate-x-full '
         }`}>
           <div className="flex flex-col px-4 py-6 space-y-4">
@@ -80,22 +78,21 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-white text-lg font-medium py-2 hover:text-[#FF6B5C] transition-all duration-200 border-b border-gray-700"
+                className="text-white text-2xl font-medium py-3 hover:text-[#2BC1EA] transition-all duration-200 border-b border-gray-700 w-full"
                 onClick={closeMenu}
               >
                 {link.name}
               </a>
             ))}
 
-            {/* Mobile Download Button */}
+            {/* Mobile Contact Button */}
             <div className="pt-4">
               <a
-                href="/cv.pdf"
-                download
-                className="block bg-[#FF6B5C] text-white px-4 py-3 rounded-md font-bold text-lg hover:bg-[#ff4a3a] transition-all duration-200 text-center"
+                href="#contact"
+                className="block bg-[#2BC1EA] text-white px-4 py-4 rounded-md font-bold text-xl hover:bg-[#1fa9cf] transition-all duration-200 text-center"
                 onClick={closeMenu}
               >
-                Download CV
+                Contact me
               </a>
             </div>
           </div>

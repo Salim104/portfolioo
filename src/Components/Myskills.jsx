@@ -30,15 +30,15 @@ const iconVariants = (duration) => ({
 const Myskills = () => {
   return (
     <section className='max-w-[1200px] mx-auto mt-20 px-8'>
-         <h1 className='text-4xl font-abril text-center'>MY <span className='text-[#FF6B5C]'>SKILLS</span></h1>
+         <h1 className='text-4xl md:text-5xl font-abril text-center md:text-start'>Tech <span className='text-[#2BC1EA]'>Stack</span></h1>
        <div className='grid lg:grid-cols-3 gap-8 py-14'>
         <div>
-        <h2 className='text-2xl font-poppins text-center mb-8'>Frontend</h2>
+        <h2 className='text-2xl md:text-3xl font-poppins text-center mb-8'>Frontend</h2>
         <motion.div 
          variants={iconVariants(2.5)}
          initial="initial"
          animate="animate"
-        className='grid grid-cols-2 gap-4 md:border-r-2 border-[#FF6B5C] lg:pr-5'>
+        className='grid grid-cols-2 gap-4 md:border-r-2 border-[#2BC1EA] lg:pr-5'>
           <img className='w-[200px] rounded-md mx-auto' src={html} alt="" />
           <img className='w-[200px] rounded-md mx-auto' src={js} alt="" />
           <img className='w-[200px] rounded-md mx-auto' src={react} alt="" />
@@ -46,12 +46,12 @@ const Myskills = () => {
         </motion.div>
         </div>
         <div>
-        <h2 className='text-2xl font-poppins text-center mb-8'>Backend</h2>
+        <h2 className='text-2xl md:text-3xl font-poppins text-center mb-8'>Backend</h2>
         <motion.div 
          variants={iconVariants(3.5)}
          initial="initial"
          animate="animate"
-        className='grid grid-cols-2 gap-4 md:border-r-2 border-[#FF6B5C] lg:pr-5'>
+        className='grid grid-cols-2 gap-4 md:border-r-2 border-[#2BC1EA] lg:pr-5'>
           <img className='w-[200px] rounded-md mx-auto' src={nodejs} alt="" />
           <img className='w-[200px] rounded-md mx-auto' src={php} alt="" />
           <img className='w-[200px] rounded-md mx-auto' src={mongodb} alt="" />
@@ -60,12 +60,12 @@ const Myskills = () => {
         </motion.div>
         </div>
         <div>
-        <h2 className='text-2xl font-poppins text-center mb-8'>Design Tools</h2>
+        <h2 className='text-2xl md:text-3xl font-poppins text-center mb-8'>Design Tools</h2>
         <motion.div 
          variants={iconVariants(4)}
          initial="initial"
          animate="animate"
-        className='grid grid-cols-2 gap-4 border-r-2 border-[#ff6c5c00] lg:pr-5'>
+        className='grid grid-cols-2 gap-4 border-r-2 border-[#2BC1EA00] lg:pr-5'>
           <img className='w-[200px] rounded-md mx-auto' src={adobe} alt="" />
           <img className='w-[200px] rounded-md mx-auto' src={figma} alt="" />
           <img className='w-[200px] rounded-md mx-auto' src={photoshop} alt="" />

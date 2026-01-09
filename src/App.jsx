@@ -5,13 +5,14 @@ import Aboutme from "./Components/Aboutme";
 import Myskills from "./Components/Myskills";
 import Project from "./Components/Project";
 import Contact from "./Components/Contact";
+import Background from "./Components/Background";
 
 export default function App() {
   return (
-    <div className="w-full">
+    <div className="w-full relative">
+      <Background />
       <Navbar />
       <Hero />
-      <Aboutme />
       <Myskills />
       <Project />
       <Contact />
