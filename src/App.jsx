@@ -9,7 +9,7 @@ import Background from "./Components/Background";
 
 export default function App() {
   return (
-    <div className="w-full relative">
+    <div className="w-full relative overflow-x-hidden">
       <Background />
       <Navbar />
       <Hero />

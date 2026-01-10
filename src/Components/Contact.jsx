@@ -22,16 +22,16 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className='max-w-[1400px] mx-auto mt-20 px-8 pb-20'>
-      <h1 className='text-4xl md:text-5xl font-abril text-center mb-16'>
+    <section id="contact" className='max-w-[1200px] mx-auto mt-20 px-8 pb-20'>
+      <h1 className='text-4xl md:text-5xl font-heading font-bold tracking-tight text-start mb-16'>
         Get in <span className='text-[#2BC1EA] underline decoration-[#2BC1EA] decoration-2 underline-offset-4'>Touch</span>
       </h1>
       
-      <div className='grid lg:grid-cols-2 gap-12 items-center bg-white/10 backdrop-blur-sm rounded-lg p-6'>
+      <div className='grid lg:grid-cols-2 gap-12 items-center bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-8 lg:p-12'>
         {/* Left Section - Contact Info */}
         <div className='space-y-8'>
           <div>
-            <p className='text-xl md:text-2xl leading-relaxed mb-8'>
+            <p className='text-lg md:text-2xl leading-relaxed mb-8 font-body text-gray-200'>
               HI, i'd love if you reached out to me. Even if it's just to 
               say "Hey! Don't hesitate! Drop me a message and i will get 
               back to you ASAP!
@@ -39,13 +39,15 @@ const Contact = () => {
           </div>
 
           {/* Social Links */}
-          <div className='space-y-4'>
+          <div className='space-y-6'>
             <a 
               href="mailto:salimshaban855@gmail.com" 
-              className='flex items-center gap-4 text-[#2BC1EA] hover:text-[#1fa9cf] transition-colors duration-200'
+              className='flex items-center gap-4 text-[#2BC1EA] hover:text-[#1fa9cf] transition-colors duration-200 group'
             >
-              <Mail size={24} />
-              <span className='text-xl'>salimshaban855@gmail.com</span>
+              <div className='flex-shrink-0'>
+                <Mail size={24} />
+              </div>
+              <span className='text-base sm:text-xl break-all font-body'>salimshaban855@gmail.com</span>
             </a>
             
             <a 
@@ -55,7 +57,7 @@ const Contact = () => {
               className='flex items-center gap-4 text-[#2BC1EA] hover:text-[#1fa9cf] transition-colors duration-200'
             >
               <Twitter size={24} />
-              <span className='text-xl'>Twitter</span>
+              <span className='text-xl font-body'>Twitter</span>
             </a>
             
             <a 
@@ -65,7 +67,7 @@ const Contact = () => {
               className='flex items-center gap-4 text-[#2BC1EA] hover:text-[#1fa9cf] transition-colors duration-200'
             >
               <Github size={24} />
-              <span className='text-xl'>Github</span>
+              <span className='text-xl font-body'>Github</span>
             </a>
           </div>
         </div>
@@ -81,7 +83,7 @@ const Contact = () => {
                 placeholder="Full Name :"
                 value={formData.fullName}
                 onChange={handleChange}
-                className='w-full px-4 py-3 bg-gray-200 text-gray-800 rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#2BC1EA] transition-all duration-200'
+                className='w-full px-4 py-3 bg-gray-200 text-gray-800 rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#2BC1EA] transition-all duration-200 text-sm sm:text-base'
                 required
               />
               <input
@@ -90,7 +92,7 @@ const Contact = () => {
                 placeholder="Email :"
                 value={formData.email}
                 onChange={handleChange}
-                className='w-full px-4 py-3 bg-gray-200 text-gray-800 rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#2BC1EA] transition-all duration-200'
+                className='w-full px-4 py-3 bg-gray-200 text-gray-800 rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#2BC1EA] transition-all duration-200 text-sm sm:text-base'
                 required
               />
             </div>
@@ -102,14 +104,14 @@ const Contact = () => {
               rows="6"
               value={formData.message}
               onChange={handleChange}
-              className='w-full px-4 py-3 bg-gray-200 text-gray-800 rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#2BC1EA] transition-all duration-200 resize-none'
+              className='w-full px-4 py-3 bg-gray-200 text-gray-800 rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#2BC1EA] transition-all duration-200 resize-none text-sm sm:text-base'
               required
             ></textarea>
 
             {/* Submit Button */}
             <button
               type="submit"
-              className='bg-[#2BC1EA] text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-[#1fa9cf] transition-all duration-200 transform hover:scale-105 w-full md:w-auto'
+              className='bg-[#2BC1EA] text-white px-10 py-3 sm:py-4 rounded-md font-bold text-base sm:text-lg hover:bg-[#1fa9cf] transition-all duration-200 transform hover:scale-[1.02] active:scale-95 w-full md:w-auto font-body'
             >
               Send Message
             </button>

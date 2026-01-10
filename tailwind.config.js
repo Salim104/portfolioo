@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        abril: ['Abril Fatface', 'cursive'],
+        body: ['Inter', 'sans-serif'],
+        heading: ['Outfit', 'sans-serif'],
       },
       backgroundImage: {
         'hero-pattern': "url('/src/assets/bg-cover.svg')",

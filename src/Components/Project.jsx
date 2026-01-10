@@ -32,8 +32,8 @@ const Project = () => {
   ];
 
   return (
-    <section id="projects" className='max-w-[1400px] mx-auto mt-20 px-8'>
-      <h1 className='text-4xl md:text-5xl font-abril text-center mb-16'>
+    <section id="projects" className='max-w-[1200px] mx-auto mt-20 px-8'>
+      <h1 className='text-4xl md:text-5xl font-heading font-bold tracking-tight text-start mb-16'>
         <span className='text-[#2BC1EA]'>Projects</span>
       </h1>
       
@@ -54,10 +54,10 @@ const Project = () => {
             
             {/* Project Content */}
             <div className='p-6'>
-              <h3 className='text-2xl md:text-3xl font-bold text-white mb-3'>
+              <h3 className='text-2xl md:text-3xl font-heading font-bold text-white mb-3 tracking-tight'>
                 {project.title}
               </h3>
-              <p className='text-gray-200 text-base md:text-lg mb-6 leading-relaxed'>
+              <p className='text-gray-300 text-base md:text-lg mb-6 leading-relaxed font-body'>
                 {project.description}
               </p>
               
@@ -65,13 +65,13 @@ const Project = () => {
               <div className='flex gap-3'>
                 <a
                   href={project.codeLink}
-                  className='bg-[#2BC1EA] text-white px-6 py-2 rounded-md font-bold text-base hover:bg-[#25a8cc] transition-all duration-200'
+                  className='bg-[#2BC1EA] text-white px-6 py-2 rounded-md font-bold text-base hover:bg-[#25a8cc] transition-all duration-200 font-body'
                 >
                   Code
                 </a>
                 <a
                   href={project.liveLink}
-                  className='bg-[#2BC1EA] text-white px-6 py-2 rounded-md font-bold text-base hover:bg-[#25a8cc] transition-all duration-200'
+                  className='bg-[#2BC1EA] text-white px-6 py-2 rounded-md font-bold text-base hover:bg-[#25a8cc] transition-all duration-200 font-body'
                 >
                   Live
                 </a>

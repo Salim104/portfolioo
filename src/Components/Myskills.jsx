@@ -29,11 +29,11 @@ const iconVariants = (duration) => ({
 
 const Myskills = () => {
   return (
-    <section className='max-w-[1200px] mx-auto mt-20 px-8'>
-         <h1 className='text-4xl md:text-5xl font-abril text-center md:text-start'>Tech <span className='text-[#2BC1EA]'>Stack</span></h1>
+    <section id="skills" className='max-w-[1200px] mx-auto mt-20 px-8'>
+         <h1 className='text-4xl md:text-5xl font-heading font-bold tracking-tight text-start'>Tech <span className='text-[#2BC1EA]'>Stack</span></h1>
        <div className='grid lg:grid-cols-3 gap-8 py-14'>
         <div>
-        <h2 className='text-2xl md:text-3xl font-poppins text-center mb-8'>Frontend</h2>
+         <h2 className='text-2xl md:text-3xl font-heading font-semibold text-center mb-8 tracking-tight'>Frontend</h2>
         <motion.div 
          variants={iconVariants(2.5)}
          initial="initial"
@@ -46,7 +46,7 @@ const Myskills = () => {
         </motion.div>
         </div>
         <div>
-        <h2 className='text-2xl md:text-3xl font-poppins text-center mb-8'>Backend</h2>
+         <h2 className='text-2xl md:text-3xl font-heading font-semibold text-center mb-8 tracking-tight'>Backend</h2>
         <motion.div 
          variants={iconVariants(3.5)}
          initial="initial"
@@ -60,7 +60,7 @@ const Myskills = () => {
         </motion.div>
         </div>
         <div>
-        <h2 className='text-2xl md:text-3xl font-poppins text-center mb-8'>Design Tools</h2>
+         <h2 className='text-2xl md:text-3xl font-heading font-semibold text-center mb-8 tracking-tight'>Design Tools</h2>
         <motion.div 
          variants={iconVariants(4)}
          initial="initial"

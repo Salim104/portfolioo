@@ -38,7 +38,7 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              className="py-[2px] hover:underline font-medium transition-all duration-200"
+              className="py-[2px] hover:text-[#2BC1EA] font-medium transition-all duration-200 font-body"
             >
               {link.name}
             </a>
@@ -49,7 +49,7 @@ const Navbar = () => {
         <div className="flex items-center gap-2">
           <a
             href="#contact"
-            className="bg-[#2BC1EA] text-white px-4 py-[3px] rounded-md font-bold text-lg hover:bg-[#1fa9cf] transition-all duration-200"
+            className="bg-[#2BC1EA] text-white px-4 py-[3px] rounded-md font-bold text-lg hover:bg-[#1fa9cf] transition-all duration-200 font-body"
           >
             Contact me
           </a>
@@ -78,7 +78,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-white text-2xl font-medium py-3 hover:text-[#2BC1EA] transition-all duration-200 border-b border-gray-700 w-full"
+                className="text-white text-2xl font-medium py-3 hover:text-[#2BC1EA] transition-all duration-200 border-b border-gray-700 w-full font-body"
                 onClick={closeMenu}
               >
                 {link.name}
@@ -89,7 +89,7 @@ const Navbar = () => {
             <div className="pt-4">
               <a
                 href="#contact"
-                className="block bg-[#2BC1EA] text-white px-4 py-4 rounded-md font-bold text-xl hover:bg-[#1fa9cf] transition-all duration-200 text-center"
+                className="block bg-[#2BC1EA] text-white px-4 py-4 rounded-md font-bold text-xl hover:bg-[#1fa9cf] transition-all duration-200 text-center font-body"
                 onClick={closeMenu}
               >
                 Contact me

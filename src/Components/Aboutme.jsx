@@ -14,24 +14,24 @@ const Aboutme = () => {
 
   return (
     <section className='max-w-[1200px] mx-auto  mt-20 flex flex-col justify-center items-center'>
-       <h1 className='text-4xl md:text-5xl font-abril'>ABOUT <span className='text-[#2BC1EA]'>ME</span></h1>
+       <h1 className='text-4xl md:text-5xl font-heading font-bold tracking-tight'>ABOUT <span className='text-[#2BC1EA]'>ME</span></h1>
        <div className='w-full grid lg:grid-cols-2 mt-1 items-center '>
         <motion.div whileInView={{ opacity: 1, x: 0 }}
   initial={{ opacity: 0, x: -100 }}
   transition={{ duration: 1.5 }} className='p-6 flex flex-col justify-center'>
-            <p className='text-2xl md:text-3xl font-medium mt-8 text-center md:text-left'>
+            <p className='text-2xl md:text-3xl font-medium mt-8 text-center md:text-left font-heading tracking-tight leading-tight'>
             I am Junior Web developer who loves exploring and 
             learning new technologies.
             </p>
 
-            <p className='text-center md:text-left text-lg md:text-xl mt-8 leading-relaxed'>
+            <p className='text-center md:text-left text-lg md:text-xl mt-8 leading-relaxed font-body text-gray-300'>
           {isExpanded ? text : text.slice(0, 200) + '...'}
-          <button onClick={() => setIsExpanded(!isExpanded)} className='text-[#2BC1EA] font-medium ml-2'>
+          <button onClick={() => setIsExpanded(!isExpanded)} className='text-[#2BC1EA] font-semibold ml-2 hover:underline'>
             {isExpanded ? 'Show Less' : 'Show More'}
           </button>
             </p>
 
-            <button className='bg-[#2BC1EA] text-white w-[180px] mx-auto md:mx-0 px-6 py-3 rounded-md font-bold text-base hover:bg-[#1fa9cf] transition  mt-8'>Download CV</button>
+            <button className='bg-[#2BC1EA] text-white w-[180px] mx-auto md:mx-0 px-6 py-3 rounded-md font-bold text-base hover:bg-[#1fa9cf] transition mt-8 font-body'>Download CV</button>
 
         </motion.div>
         <motion.div whileInView={{ opacity: 1, x: 0 }}
