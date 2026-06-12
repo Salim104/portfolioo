@@ -13,65 +13,157 @@ const container = (delay) => ({
   },
 });
 
+const techGroups = [
+  {
+    category: 'Frontend',
+    items: [
+      { name: 'React', color: '#61DAFB' },
+      { name: 'JavaScript', color: '#F7DF1E' },
+      { name: 'HTML5', color: '#E34F26' },
+      { name: 'Tailwind', color: '#38BDF8' },
+    ],
+  },
+  {
+    category: 'Backend',
+    items: [
+      { name: 'Node.js', color: '#83CD29' },
+      { name: 'PHP', color: '#8993BE' },
+      { name: 'MongoDB', color: '#47A248' },
+      { name: 'Firebase', color: '#FFCA28' },
+      { name: 'Python', color: '#6DA8D6' },
+    ],
+  },
+  {
+    category: 'Design',
+    items: [
+      { name: 'Figma', color: '#F24E1E' },
+      { name: 'Adobe XD', color: '#FF61F6' },
+      { name: 'Photoshop', color: '#31A8FF' },
+    ],
+  },
+];
+
+const gridStagger = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.06 } },
+};
+
+const tileVariants = {
+  hidden: { opacity: 0, y: 18, scale: 0.92 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { type: 'spring', stiffness: 260, damping: 22 } },
+};
+
+const TechTile = ({ name, color }) => (
+  <motion.div
+    variants={tileVariants}
+    whileHover={{ y: -3, boxShadow: `0 10px 26px -10px ${color}73` }}
+    style={{ '--c': color }}
+    className="group inline-flex items-center rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm font-body text-white backdrop-blur-sm transition-colors duration-300 hover:border-[color:var(--c)] hover:text-[color:var(--c)] cursor-default"
+  >
+    {name}
+  </motion.div>
+);
+
+const TechStack = () => (
+  <div id="skills" className="scroll-mt-24">
+    <p className="text-[#2BC1EA] text-xs sm:text-sm font-body uppercase tracking-[0.25em] mb-2">
+      What I build with
+    </p>
+    <h2 className="text-3xl sm:text-4xl font-heading font-bold tracking-tight mb-8">
+      Tech <span className="text-[#2BC1EA]">Stack</span>
+    </h2>
+
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-8 gap-y-6">
+      {techGroups.map(({ category, items }) => (
+        <div key={category} className="flex flex-col gap-3">
+          <span className="text-xs font-heading font-semibold uppercase tracking-[0.18em] text-white/40">
+            {category}
+          </span>
+          <motion.div
+            variants={gridStagger}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="flex flex-wrap gap-3"
+          >
+            {items.map((t) => (
+              <TechTile key={t.name} {...t} />
+            ))}
+          </motion.div>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
 const Hero = () => {
   return (
-    <section className=''>
-      <div className='min-h-[80vh] pt-20 sm:pt-0 text-start flex items-center'>
-        <div className='col-span-2 text-center mx-auto px-4'>
-          <motion.img 
+    <section className='relative'>
+      <div className='min-h-[calc(100vh-4rem)] flex flex-col justify-center gap-10 lg:gap-12 w-full max-w-[1200px] mx-auto px-4 py-10'>
+
+        {/* Intro */}
+        <div className='flex flex-col md:flex-row items-center gap-8 md:gap-10 text-center md:text-left'>
+          <motion.img
             animate={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 1 }}
-            src={profile} 
-            alt="Profile" 
+            src={profile}
+            alt="Profile"
             style={{
               backgroundSize: '110%',
               backgroundPosition: 'center 30%',
               objectFit: 'cover'
             }}
-            className="w-[200px] sm:w-[300px] mx-auto md:w-[280px] bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out animate-cycle mb-8" 
-          />
-          <h1 className='text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight tracking-tight'>Hi There, I'm Salim</h1>
-          <br />
-
-          <ReactTyped  
-            className="text-[#2BC1EA] text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-heading font-semibold" 
-            strings={["Full-Stack developer"]} 
-            typeSpeed={120} 
+            className="w-[180px] sm:w-[220px] md:w-[240px] shrink-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out animate-cycle"
           />
 
-          <motion.p 
-            variants={container(1)}
-            initial="hidden"
-            animate="visible"
-            className="mt-6 text-gray-400 text-base sm:text-lg md:text-xl font-body max-w-2xl mx-auto leading-relaxed"
-          >
-            From 'Hello World' to production-ready apps. Always learning, always building, always improving.
-          </motion.p>
+          <div>
+            <h1 className='text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight tracking-tight'>Hi There, I'm Salim</h1>
 
-          <div className="flex justify-center gap-8 mt-10">
-            <a 
-              href="https://linkedin.com/in/salim-shaban-7523b5188" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 text-white hover:text-[#2BC1EA] transition-colors duration-300"
+            <div className="mt-3">
+              <ReactTyped
+                className="text-[#2BC1EA] text-2xl sm:text-3xl lg:text-4xl font-heading font-semibold"
+                strings={["Full-Stack developer"]}
+                typeSpeed={120}
+              />
+            </div>
+
+            <motion.p
+              variants={container(1)}
+              initial="hidden"
+              animate="visible"
+              className="mt-4 text-gray-400 text-base sm:text-lg font-body max-w-xl mx-auto md:mx-0 leading-relaxed"
             >
-              <FaLinkedin size={32} className="text-[#0077B5]" />
-              <span className="text-lg sm:text-xl font-body">LinkedIn</span>
-            </a>
-            
-            <a 
-              href="https://github.com/Salim104" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 text-white hover:text-[#2BC1EA] transition-colors duration-300"
-            >
-              <FaGithub size={32} />
-              <span className="text-lg sm:text-xl font-body">GitHub</span>
-            </a>
+              From 'Hello World' to production-ready apps. Always learning, always building, always improving.
+            </motion.p>
+
+            <div className="flex justify-center md:justify-start gap-8 mt-6">
+              <a
+                href="https://linkedin.com/in/salim-shaban-7523b5188"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-white hover:text-[#2BC1EA] transition-colors duration-300"
+              >
+                <FaLinkedin size={28} className="text-[#0077B5]" />
+                <span className="text-lg font-body">LinkedIn</span>
+              </a>
+
+              <a
+                href="https://github.com/Salim104"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-white hover:text-[#2BC1EA] transition-colors duration-300"
+              >
+                <FaGithub size={28} />
+                <span className="text-lg font-body">GitHub</span>
+              </a>
+            </div>
           </div>
-
         </div>
+
+        {/* Tech Stack — spread under the intro, same viewport */}
+        <TechStack />
+
       </div>
     </section>
   )
