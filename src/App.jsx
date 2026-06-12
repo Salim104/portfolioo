@@ -2,7 +2,7 @@
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Aboutme from "./Components/Aboutme";
-import Project from "./Components/Project";
+import FeaturedProject from "./Components/FeaturedProject";
 import Contact from "./Components/Contact";
 import Background from "./Components/Background";
 
@@ -12,7 +12,7 @@ export default function App() {
       <Background />
       <Navbar />
       <Hero />
-      <Project />
+      <FeaturedProject />
       <Contact />
     </div>
   )

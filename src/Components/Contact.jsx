@@ -1,124 +1,19 @@
-import React, { useState } from 'react'
-import { Mail, Twitter, Github } from 'lucide-react'
+import React from 'react'
+import { Mail } from 'lucide-react'
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-  };
-
   return (
-    <section id="contact" className='max-w-[1200px] mx-auto mt-20 px-8 pb-20'>
-      <h1 className='text-4xl md:text-5xl font-heading font-bold tracking-tight text-start mb-16'>
-        Get in <span className='text-[#2BC1EA] underline decoration-[#2BC1EA] decoration-2 underline-offset-4'>Touch</span>
-      </h1>
-      
-      <div className='grid lg:grid-cols-2 gap-12 items-center bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-8 lg:p-12'>
-        {/* Left Section - Contact Info */}
-        <div className='space-y-8'>
-          <div>
-            <p className='text-lg md:text-2xl leading-relaxed mb-8 font-body text-gray-200'>
-              HI, i'd love if you reached out to me. Even if it's just to 
-              say "Hey! Don't hesitate! Drop me a message and i will get 
-              back to you ASAP!
-            </p>
-          </div>
-
-          {/* Social Links */}
-          <div className='space-y-6'>
-            <a 
-              href="mailto:salimshaban855@gmail.com" 
-              className='flex items-center gap-4 text-[#2BC1EA] hover:text-[#1fa9cf] transition-colors duration-200 group'
-            >
-              <div className='flex-shrink-0'>
-                <Mail size={24} />
-              </div>
-              <span className='text-base sm:text-xl break-all font-body'>salimshaban855@gmail.com</span>
-            </a>
-            
-            <a 
-              href="https://twitter.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className='flex items-center gap-4 text-[#2BC1EA] hover:text-[#1fa9cf] transition-colors duration-200'
-            >
-              <Twitter size={24} />
-              <span className='text-xl font-body'>Twitter</span>
-            </a>
-            
-            <a 
-              href="https://github.com/Salim104" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className='flex items-center gap-4 text-[#2BC1EA] hover:text-[#1fa9cf] transition-colors duration-200'
-            >
-              <Github size={24} />
-              <span className='text-xl font-body'>Github</span>
-            </a>
-          </div>
-        </div>
-
-        {/* Right Section - Contact Form */}
-        <div>
-          <form onSubmit={handleSubmit} className='space-y-4'>
-            {/* Name and Email Row */}
-            <div className='grid md:grid-cols-2 gap-4'>
-              <input
-                type="text"
-                name="fullName"
-                placeholder="Full Name :"
-                value={formData.fullName}
-                onChange={handleChange}
-                className='w-full px-4 py-3 bg-gray-200 text-gray-800 rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#2BC1EA] transition-all duration-200 text-sm sm:text-base'
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email :"
-                value={formData.email}
-                onChange={handleChange}
-                className='w-full px-4 py-3 bg-gray-200 text-gray-800 rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#2BC1EA] transition-all duration-200 text-sm sm:text-base'
-                required
-              />
-            </div>
-
-            {/* Message Textarea */}
-            <textarea
-              name="message"
-              placeholder="Message :"
-              rows="6"
-              value={formData.message}
-              onChange={handleChange}
-              className='w-full px-4 py-3 bg-gray-200 text-gray-800 rounded-md placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#2BC1EA] transition-all duration-200 resize-none text-sm sm:text-base'
-              required
-            ></textarea>
-
-            {/* Submit Button */}
-            <button
-              type="submit"
-              className='bg-[#2BC1EA] text-white px-10 py-3 sm:py-4 rounded-md font-bold text-base sm:text-lg hover:bg-[#1fa9cf] transition-all duration-200 transform hover:scale-[1.02] active:scale-95 w-full md:w-auto font-body'
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
+    <footer id="contact" className='max-w-[1200px] mx-auto mt-20 px-8'>
+      <div className='border-t border-white/10 py-8'>
+        <a
+          href="mailto:salimshaban885@gmail.com"
+          className='flex items-center gap-3 text-gray-400 hover:text-[#2BC1EA] transition-colors duration-200'
+        >
+          <Mail size={18} />
+          <span className='text-sm sm:text-base break-all font-body'>salimshaban885@gmail.com</span>
+        </a>
       </div>
-    </section>
+    </footer>
   )
 }
 
