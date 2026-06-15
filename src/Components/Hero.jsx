@@ -3,15 +3,7 @@ import React from 'react'
 import profile from '../assets/profile.png'
 import { motion } from "motion/react"
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-
-const container = (delay) => ({
-  hidden: { x: -100, opacity: 0 },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: 0.5, delay: delay },
-  },
-});
+import StatusBadge from "./StatusBadge";
 
 const techGroups = [
   {
@@ -103,22 +95,16 @@ const Hero = () => {
 
         {/* Intro */}
         <div className='flex flex-col md:flex-row items-center gap-8 md:gap-10 text-center md:text-left'>
-          <motion.img
-            animate={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: 100 }}
-            transition={{ duration: 1 }}
+          <img
             src={profile}
             alt="Profile"
-            style={{
-              backgroundSize: '110%',
-              backgroundPosition: 'center 30%',
-              objectFit: 'cover'
-            }}
-            className="w-[180px] sm:w-[220px] md:w-[240px] shrink-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out animate-cycle"
+            className="w-[180px] sm:w-[220px] md:w-[240px] aspect-square shrink-0 rounded-full object-cover object-[center_30%]"
           />
 
           <div>
-            <h1 className='text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight tracking-tight'>Hi There, I'm Salim</h1>
+            <StatusBadge color="green">Open to work</StatusBadge>
+
+            <h1 className='mt-4 text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight tracking-tight'>Hi There, I'm Salim</h1>
 
             <div className="mt-3">
               <ReactTyped
@@ -128,14 +114,9 @@ const Hero = () => {
               />
             </div>
 
-            <motion.p
-              variants={container(1)}
-              initial="hidden"
-              animate="visible"
-              className="mt-4 text-gray-400 text-base sm:text-lg font-body max-w-xl mx-auto md:mx-0 leading-relaxed"
-            >
+            <p className="mt-4 text-gray-400 text-base sm:text-lg font-body max-w-xl mx-auto md:mx-0 leading-relaxed">
               From 'Hello World' to production-ready apps. Always learning, always building, always improving.
-            </motion.p>
+            </p>
 
             <div className="flex justify-center md:justify-start gap-8 mt-6">
               <a

@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "motion/react"
+import StatusBadge from "./StatusBadge"
 
 const FeaturedProject = () => {
   const techStack = {
@@ -9,9 +10,12 @@ const FeaturedProject = () => {
 
   return (
     <section id="projects" className='max-w-[1200px] mx-auto mt-20 px-8'>
-      <h1 className='text-4xl md:text-5xl font-heading font-bold tracking-tight text-start mb-16'>
-        <span className='text-[#2BC1EA]'>Projects</span>
-      </h1>
+      <div className='flex flex-wrap items-center gap-4 mb-16'>
+        <h1 className='text-4xl md:text-5xl font-heading font-bold tracking-tight'>
+          <span className='text-[#2BC1EA]'>Projects</span>
+        </h1>
+        <StatusBadge color="green">Live with real users</StatusBadge>
+      </div>
 
       <div className='bg-[#002E52] rounded-2xl shadow-2xl overflow-hidden grid lg:grid-cols-2 items-stretch'>
         {/* Project Preview Image */}
