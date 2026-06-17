@@ -6,6 +6,7 @@ import { IoClose } from "react-icons/io5";
 const navLinks = [
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
+  { name: 'Client Work', href: '#client-work' },
 ];
 
 const Navbar = () => {
