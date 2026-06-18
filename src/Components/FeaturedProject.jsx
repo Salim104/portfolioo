@@ -98,7 +98,7 @@ const FeaturedProject = () => {
               Code
             </a>
             <a
-              href="https://riderplug-conv.vercel.app/"
+              href="https://www.riderplug.co.za/"
               target="_blank"
               rel="noopener noreferrer"
               className='bg-transparent text-[#2BC1EA] border border-[#2BC1EA] px-6 py-2 rounded-md font-bold text-base hover:bg-[#2BC1EA] hover:text-white transition-all duration-200 font-body'
