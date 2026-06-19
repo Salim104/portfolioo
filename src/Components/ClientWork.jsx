@@ -12,7 +12,7 @@ const clientProjects = [
     description: "An online storefront for a South African bicycle and spare-parts retailer — letting customers browse stock, view products, and get in touch to order.",
     image: "/images/williamsbikesandspares.png",
     liveLink: "https://www.williamsbikesandspares.co.za/",
-    tags: ["React", "Tailwind"],
+    tags: ["React", "Tailwind", "Clerk Auth", "Resend", "Convex"],
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const clientProjects = [
     description: "A sneaker store web app where users can browse the latest kicks and drops, built with a fast, modern React stack.",
     image: "/images/thekickslab.png",
     liveLink: "https://thekickslab-cov.vercel.app/",
-    tags: ["React", "Tailwind"],
+    tags: ["Next.js", "Tailwind", "Clerk Auth", "Resend", "Neon PostgreSQL", "Stripe"],
   },
 ]
 
