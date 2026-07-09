@@ -8,6 +8,14 @@ import StatusBadge from "./StatusBadge"
 const clientProjects = [
   {
     id: 1,
+    name: "The Hub Inc",
+    description: "A South African Apple reseller storefront — customers browse iPhone, Watch, iPad, Mac and accessories, with free delivery, warranty and returns handled end to end.",
+    image: "/images/thehub.png",
+    liveLink: "https://www.thehubinc.co.za/",
+    tags: ["Next.js", "Tailwind", "Clerk Auth", "Resend", "Neon PostgreSQL", "Stripe"],
+  },
+  {
+    id: 2,
     name: "Williams Bikes & Spares",
     description: "An online storefront for a South African bicycle and spare-parts retailer — letting customers browse stock, view products, and get in touch to order.",
     image: "/images/williamsbikesandspares.png",
@@ -15,7 +23,7 @@ const clientProjects = [
     tags: ["React", "Tailwind", "Clerk Auth", "Resend", "Convex"],
   },
   {
-    id: 2,
+    id: 3,
     name: "The Kicks Lab",
     description: "A sneaker store web app where users can browse the latest kicks and drops, built with a fast, modern React stack.",
     image: "/images/thekickslab.png",
@@ -27,12 +35,16 @@ const clientProjects = [
 const ClientWork = () => {
   return (
     <section id="client-work" className='max-w-[1200px] mx-auto mt-20 px-8'>
-      <div className='flex flex-wrap items-center gap-4 mb-16'>
-        <h1 className='text-4xl md:text-5xl font-heading font-bold tracking-tight'>
-          <span className='text-[#2BC1EA]'>Client Work</span>
-        </h1>
+      <div className='flex flex-wrap items-center gap-4 mb-6'>
+        <p className='text-[#2BC1EA] text-sm font-body font-semibold uppercase tracking-[0.2em]'>
+          Client Work
+        </p>
         <StatusBadge color="green">Real client projects</StatusBadge>
       </div>
+
+      <h1 className='text-white text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight leading-[1.15] max-w-[24ch] mb-16'>
+        Sites that are live and getting real clients.
+      </h1>
 
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center'>
         {clientProjects.map((project) => (
